@@ -1,0 +1,22 @@
+Modified emotion_detector function:
+
+- Converts API response to dictionary using json.loads()
+- Extracts emotion scores: anger, disgust, fear, joy, sadness
+- Determines dominant emotion using max()
+- Returns a dictionary with all scores and dominant emotionModified emotion_detector function:
+
+- Parses JSON response using json.loads()
+- Extracts:
+  anger, disgust, fear, joy, sadness
+- Finds dominant emotion using max()
+- Returns dictionary:
+
+{
+  'anger': anger_score,
+  'disgust': disgust_score,
+  'fear': fear_score,
+  'joy': joy_score,
+  'sadness': sadness_score,
+  'dominant_emotion': '<name of highest emotion>'
+}
+
